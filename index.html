@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url('energylania.jpg');
+            background-size: cover;
+        }
+
+        #form-container {
+            background-color: pink;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form-container">
+        <h1 style="color: blue;">FORMULARZ</h1>
+        <form action="przetwarzanie_formularza.php" method="post">
+            <label for="imie">Imię:</label><br>
+            <input type="text" id="imie" name="imie"><br><br>
+
+            <label for="nazwisko">Nazwisko:</label><br>
+            <input type="text" id="nazwisko" name="nazwisko"><br><br>
+
+            <label for="co_zwiedzic">Co byś chciał zwiedzić?</label><br>
+            <select id="co_zwiedzic" name="co_zwiedzic">
+                <option value="hamburger">Hamburgera</option>
+                <option value="pizza">Pizzę</option>
+                <option value="inne">Inne</option>
+            </select><br><br>
+
+            <label for="ulubiona_atrakcja">Jaką atrakcję w Energylandii lubisz najbardziej?</label><br>
+            <input type="radio" id="hyperion" name="ulubiona_atrakcja" value="hyperion">
+            <label for="hyperion">Hyperion</label><br>
+
+            <input type="radio" id="zadra" name="ulubiona_atrakcja" value="zadra">
+            <label for="zadra">Zadra</label><br>
+
+            <input type="radio" id="energus" name="ulubiona_atrakcja" value="energus">
+            <label for="energus">Energus</label><br><br>
+
+            <label for="niepodobajace_sie">Co Ci się nie podoba w naszej wycieczce?</label><br>
+            <textarea id="niepodobajace_sie" name="niepodobajace_sie" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Zarejestruj się">
+        </form>
+    </div>
+</body>
+
+</html>
